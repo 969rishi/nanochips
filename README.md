@@ -87,5 +87,6 @@ You can get values with any for loop
                 }
 ```
 
- 
+# License
+Nanochips is released under the MIT License. See #LICENSE for details. 
  
