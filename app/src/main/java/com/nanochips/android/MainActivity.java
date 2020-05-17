@@ -15,28 +15,34 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-    private TextView textView;
+    private TextView button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textView = findViewById(R.id.message_textview);
-        RecyclerView recyclerView = findViewById(R.id.custom_tags_recyclerview);
-        new NanoChipClass(MainActivity.this, recyclerView);
+        button = findViewById(R.id.message_textview);
+        RecyclerView recyclerView = findViewById(R.id.nanochips_tags_recyclerview);
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Mango");
+        list.add("Grapes");
+        list.add("Banana");
+        list.add("Avocados");
+        list.add("Dragon Fruit");
+        list.add("strawberries");
+        list.add("blueberries");
+        new NanoChipClass(MainActivity.this, recyclerView, list);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        textView.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 List<String> list = NanoChipClass.getAllChipsValues();
-
-                Log.d(TAG, "onClick: lenght of nano chips " + list.size());
-                for (String s : list) {
-                    Log.d(TAG, "Values = " + s);
+                for (int i = 0; i < list.size(); i++) {
+                    Log.d(TAG, "Values = " + list.get(i));
                 }
             }
         });
