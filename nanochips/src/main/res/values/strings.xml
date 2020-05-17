@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NanoChips</string>
+    <string name="title">NanoChips Sample App</string>
+    <string name="intro_msg">This is a demo app just to show you guys how nanochips works. We use \'enter\' key as chip terminator, you can select variety of chip terminators from the given options.</string>
+</resources>
