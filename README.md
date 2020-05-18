@@ -1,3 +1,5 @@
+![nanochips](https://github.com/969rishi/nanochips/blob/master/images/ic_launcher_round.png)
+
 # Nanochips for Android
 
 Nanochips is a library for Android that provides a custom TextView allowing users to enter text and create material chips in the text field.
@@ -42,6 +44,10 @@ To initialize nano chips **without pre loaded** chips just do the following:
         new NanoChipClass(MainActivity.this, recyclerView);
     }
  ```
+ An empty nanochips would appear like this
+ 
+![nanochips](https://github.com/969rishi/nanochips/blob/master/images/img2.png)
+ 
  
 To initialize nano chips **with pre-loaded** chips, just do the following:
 ```
@@ -62,7 +68,10 @@ To initialize nano chips **with pre-loaded** chips, just do the following:
         new NanoChipClass(MainActivity.this, recyclerView, list);
     }
  ```
- 
+A non empty nanochips would appear like this
+
+![nanochips](https://github.com/969rishi/nanochips/blob/master/images/img1.png) 
+
  # To get the values of chips
  It returns the list even if it is null, it will return empty list to avoid **NullPointerException**
  ```
